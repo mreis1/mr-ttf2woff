@@ -1,6 +1,6 @@
 {
   "name": "mr-ttf2woff",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts ttf files into woff files",
   "main": "index.js",
   "scripts": {},
