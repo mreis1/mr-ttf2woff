@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {},
   "bin": {
-    "mr-ttf2woff": "node ./bin/mr-ttf2woff.js"
+    "mr-ttf2woff": "./bin/mr-ttf2woff.js"
   },
   "author": "hello@marcioreis.pt",
   "license": "ISC",
