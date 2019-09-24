@@ -1,0 +1,17 @@
+{
+  "name": "htz-ttf2woff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "htz-ttf2woff": "node ./bin/mr-ttf2woff.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^8.1.0",
+    "ttf2woff2": "^3.0.0",
+    "yargs": "^14.0.0"
+  }
+}
