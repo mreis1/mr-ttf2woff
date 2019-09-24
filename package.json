@@ -1,13 +1,13 @@
 {
   "name": "htz-ttf2woff",
   "version": "1.0.0",
-  "description": "",
+  "description": "Converts ttf files into woff files",
   "main": "index.js",
   "scripts": {},
   "bin": {
     "htz-ttf2woff": "node ./bin/mr-ttf2woff.js"
   },
-  "author": "",
+  "author": "hello@marcioreis.pt",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^8.1.0",
