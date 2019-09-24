@@ -3,7 +3,7 @@ var glob = require("glob")
 var path = require("path");
 var fs = require('fs');
 var ttf2woff2 = require('ttf2woff2');
-var fse = require('fse');
+var fse = require('fs-extra');
 
 if (!argv.src) {
 	throw new Error('Invalid src path');
@@ -18,7 +18,7 @@ glob(argv.src, {}, function (err, files) {
 		throw err;
 	}
 
-	var baseDir = process.cwd(), argv.outDir;
+	var baseDir = path.join(process.cwd(), argv.outDir);
 	
 	if (files.length) {
 		fse.ensureDirSync(baseDir);
@@ -30,7 +30,6 @@ glob(argv.src, {}, function (err, files) {
   	// er is an error object or null.
 	files.forEach(function(file){
 		var f = path.parse(file);
-		console.log(f);
 		var input = fs.readFileSync(file);
 		console.log('Processing ' + file)
 		var outputTo = path.join(baseDir, f.name + '.woff2');
